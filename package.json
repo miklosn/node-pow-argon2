@@ -1,0 +1,20 @@
+{
+  "name": "node-pow-argon2",
+  "version": "1.0.0",
+  "description": "An Argon2-based proof of work library for Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel lib --presets babel-preset-es2015 --out-dir distribution"
+  },
+  "author": "Miklos Niedermayer",
+  "license": "Unlicense",
+  "dependencies": {
+    "argon2": "^0.17.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^22.4.2"
+  }
+}
