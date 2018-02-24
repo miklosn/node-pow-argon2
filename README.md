@@ -27,12 +27,12 @@ Options:
 
 The following options are available, along with their defaults:
 
-```json
+```javascript
 {
     timeCost: 1
-    memoryCost: 14,   # MUST be at least 3
+    memoryCost: 14,   // MUST be at least 3
     parallelism: 2,
-    complexity: 8     # MUST be at least 8
+    complexity: 8     // MUST be at least 8
 }
 ```
 
@@ -57,12 +57,12 @@ Options:
 
 The following options are available, along with their defaults:
 
-```json
+```javascript
 {
-    timeCost: 1       # Proof must have been created with AT LEAST this value to not fail
-    memoryCost: 14,   # Proof must have been created with AT LEAST this value to not fail
-    parallelism: 2,   # Proof must have been created with EXACTLY this value to not fail
-    complexity: 8     # At least 8. Proof MUST have AT LEAST this complexity.
+    timeCost: 1       // Proof must have been created with AT LEAST this value to not fail
+    memoryCost: 14,   // Proof must have been created with AT LEAST this value to not fail
+    parallelism: 2,   // Proof must have been created with EXACTLY this value to not fail
+    complexity: 8     // At least 8. Proof MUST have AT LEAST this complexity.
 }
 ```
 
