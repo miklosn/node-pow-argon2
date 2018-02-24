@@ -4,7 +4,7 @@
   "description": "An Argon2-based proof of work library for Node",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest lib/",
     "build": "babel lib --presets babel-preset-es2015 --out-dir distribution"
   },
   "author": "Miklos Niedermayer",
@@ -14,7 +14,25 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "jest": "^22.4.2"
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.2",
+    "regenerator-runtime": "^0.11.1"
+  },
+  "babel": {
+    "sourceMaps": "both",
+    "plugins": [
+      "transform-object-rest-spread"
+    ],
+    "presets": [
+      [ "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
   }
 }
