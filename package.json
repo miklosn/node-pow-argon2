@@ -28,7 +28,8 @@
     "babel-jest": "^22.4.1",
     "babel-preset-env": "^1.6.1",
     "jest": "^22.4.2",
-    "regenerator-runtime": "^0.11.1"
+    "regenerator-runtime": "^0.11.1",
+    "sandra": "^0.2.1"
   },
   "babel": {
     "sourceMaps": "both",
