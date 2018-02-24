@@ -1,6 +1,6 @@
 {
   "name": "node-pow-argon2",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An Argon2-based proof of work library for Node",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,8 @@
       "transform-object-rest-spread"
     ],
     "presets": [
-      [ "env",
+      [
+        "env",
         {
           "targets": {
             "node": "current"
