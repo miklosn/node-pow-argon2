@@ -11,11 +11,60 @@ An Argon2-based proof of work library for Node
 
 Syntax:
 
-`solve (input, options)`
+hash = `solve (input, options)`
+
+Example:
+
+```javascript
+import * as pow from 'node-pow-argon2'
+
+...
+
+const proof = await pow.solve(input, { complexity: 20 });
+```
+
+Options:
+
+The following options are available, along with their defaults:
+
+```json
+{
+    timeCost: 1
+    memoryCost: 14,   # MUST be at least 3
+    parallelism: 2,
+    complexity: 8     # MUST be at least 8
+}
+```
 
 ### verify
 
+Syntax:
+
 `verify (input, proof, options)`
+
+Example:
+
+```javascript
+import * as pow from 'node-pow-argon2'
+
+...
+const proof = '$argon2d$v=19$m=512,t=3,p=1$x+qyCc4ZcX79+lATSyhEhQ$00056gSabWkJXAlsWK+QRJ3coP5aM8WhtQqP0Ci9VLA';
+const input = 'x';
+const result = await pow.verify(input, proof, { complexity: 20 });
+```
+
+Options:
+
+The following options are available, along with their defaults:
+
+```json
+{
+    timeCost: 1       # Proof must have been created with AT LEAST this value to not fail
+    memoryCost: 14,   # Proof must have been created with AT LEAST this value to not fail
+    parallelism: 2,   # Proof must have been created with EXACTLY this value to not fail
+    complexity: 8     # At least 8. Proof MUST have AT LEAST this complexity.
+}
+```
 
 ## Benchmark
 
