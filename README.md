@@ -11,7 +11,7 @@ An Argon2-based proof of work library for Node
 
 Syntax:
 
-hash = `solve (input, options)`
+`hash = solve (input, options)`
 
 Example:
 
