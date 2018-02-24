@@ -7,6 +7,16 @@ An Argon2-based proof of work library for Node
 
 ## Functions
 
+### solve
+
+Syntax:
+
+`solve (input, options)`
+
+### verify
+
+`verify (input, proof, options)`
+
 ## Benchmark
 
 ```
@@ -15,4 +25,5 @@ pow#[t=1, m=16, p=2, c=8] x 0.38 ops/sec ±1.02% (46 runs sampled)
 pow#[t=1, m=17, p=2, c=8] x 0.20 ops/sec ±0.78% (24 runs sampled)
 pow#[t=1, m=18, p=2, c=8] x 0.07 ops/sec ±1.52% (12 runs sampled)
 pow#[t=1, m=19, p=2, c=8] x 0.03 ops/sec ±0.62% (4 runs sampled)
+verify#verify x 950.02 ops/sec ±0.09% (1899 runs sampled)
 ```
