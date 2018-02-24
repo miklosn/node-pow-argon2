@@ -1,12 +1,15 @@
 {
   "name": "node-pow-argon2",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "An Argon2-based proof of work library for Node",
-  "keywords": ["pow", "argon2"],
+  "keywords": [
+    "pow",
+    "argon2"
+  ],
   "homepage": "https://github.com/miklosn/node-pow-argon2",
-  "repository" : { 
-    "type" : "git",
-    "url" : "git@github.com:miklosn/node-pow-argon2.git"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:miklosn/node-pow-argon2.git"
   },
   "main": "dist/index.js",
   "scripts": {
