@@ -2,3 +2,4 @@ node_modules/
 dist/
 distribution/
 .vscode
+coverage/

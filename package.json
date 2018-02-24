@@ -2,7 +2,7 @@
   "name": "node-pow-argon2",
   "version": "0.1.2",
   "description": "An Argon2-based proof of work library for Node",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest lib/",
     "build": "babel lib/ --presets babel-preset-es2015 --out-dir dist/"
