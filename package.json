@@ -20,7 +20,7 @@
   "author": "Miklos Niedermayer",
   "license": "Unlicense",
   "dependencies": {
-    "argon2": "^0.17.2"
+    "argon2": "^0.19.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
