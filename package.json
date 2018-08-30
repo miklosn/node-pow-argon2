@@ -20,16 +20,16 @@
   "author": "Miklos Niedermayer",
   "license": "Unlicense",
   "dependencies": {
-    "argon2": "^0.17.2"
+    "argon2": "^0.19.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-jest": "^22.4.1",
+    "babel-jest": "^23.4.2",
     "babel-preset-env": "^1.6.1",
-    "jest": "^22.4.2",
-    "regenerator-runtime": "^0.11.1",
-    "sandra": "^0.2.1"
+    "jest": "^23.5.0",
+    "regenerator-runtime": "^0.12.1",
+    "sandra": "^0.3.2"
   },
   "babel": {
     "sourceMaps": "both",
